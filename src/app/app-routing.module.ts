@@ -14,9 +14,9 @@ const routes: Routes = [
   {
     path: 'collections',
     loadChildren: () =>
-      import('./collections/collections.module').then((m) => {
-        return m.CollectionsModule;
-      }),
+      import('./collections/collections.module').then(
+        (m) => m.CollectionsModule
+      ),
   },
   { path: '', component: HomeComponent },
   { path: '**', component: NotFoundComponent },
