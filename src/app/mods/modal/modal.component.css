@@ -1,0 +1,13 @@
+.actions:empty {
+  display: none;
+}
+.actions-default {
+  display: none;
+}
+
+/**
+SHow actions SIBLING with class actions-deafult
+**/
+.actions:empty + .actions-default {
+  display: block;
+}
